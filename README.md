@@ -1,7 +1,5 @@
 # 🍵Cocteau's Tea
-This is a simple AND minimalist web 
-project that has been carefully maintained 
-and refined over multiple years. Built entirely 
+This is a simple and minimalist web project that has been carefully maintained and refined over multiple years. Built entirely 
 using: clean HTML for structure, CSS for styling,
 and vanilla JavaScript with DOM manipulation 
 for interactivity.
@@ -27,4 +25,4 @@ vision of Jean Cocteau and the timeless elegance of Yves Saint Laurent.
 * Interactivity: Mobile menu, hover animations, form interactions.
 * Responsiveness: Optimized across all device sizes with graceful degradation.
 
-  # >Note I haven't finished this yet. I have to add more interactivity and SCSS.
+>Note I haven't finished this yet. I have to add more interactivity and SCSS.
