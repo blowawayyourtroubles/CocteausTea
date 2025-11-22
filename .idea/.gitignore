@@ -1,32 +1,19 @@
-# Default ignored files
-/shelf/
-/workspace.xml
-
-# IDE and Editor Configuration
+# IDE & Editor
 .idea/
 .vscode/
+*.code-workspace
 
-# Testing 
-test/
-.test/
-
-# OS Files
+# OS
 .DS_Store
 Thumbs.db
 
-# Logs
+# Testing & Temp
+test/
 *.log
-npm-debug.log*
-
-# Environment Variables
-.env
-.env.local
-
-# Temporary Files
 *.tmp
 *.bak
 *~
 
-# Build/Dist (if you add these later)
-dist/
-build/
+# Environment
+.env
+.env.local
