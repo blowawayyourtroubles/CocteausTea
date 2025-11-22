@@ -1,0 +1,226 @@
+.main-section {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.main-div {
+    padding: 10px;
+    margin: 10px;
+}
+
+.main-div h2,
+.main-div p {
+    padding: 20px;
+    margin: 15px;
+}
+
+.main-div:first-child {
+    grid-column: 1 / 3;
+    text-align: justify;
+}
+
+.main-div img {
+    width: 550px;
+    display: block;
+}
+
+.main-div:last-child {
+    grid-row-start: 2;
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.timeline {
+    max-width: 800px;
+    color: var(--detail);
+    margin: 100px auto;
+}
+
+.timeline-title {
+    text-align: center;
+}
+
+.year {
+    text-align: center;
+}
+
+.tea-ritual-section {
+    display: grid;
+    place-items: center;
+    place-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 100vh;
+    width: 100%;
+    color: var(--secondary-color);
+    background: linear-gradient(135deg, #374b4acc, #f8f0e7a6),
+        url(/assets/cocteau-hill.jpg) no-repeat center center / cover;
+}
+
+.tea-ritual-title {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding: 10px;
+    text-align: center;
+    font-size: 77px;
+}
+
+.tea-ritual-description {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    font-size: 22px;
+}
+
+.tea-ritual-text-1 {
+    text-align: justify;
+    grid-column: 1 / 3;
+    padding: 30px;
+}
+
+.tea-ritual-text-2 {
+    text-align: justify;
+    grid-column: 3 / 5;
+    padding: 30px;
+}
+
+#our-location {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+}
+
+.location-title {
+    margin: 25px;
+}
+
+.location-title h2 {
+    font-size: 118px;
+    margin-bottom: 0.2em;
+}
+
+.location-p {
+    font-size: 28px;
+    text-align: justify;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        padding-top: 50px;
+    }
+.section-title {
+    font-size: 48px;
+}
+.articles-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    width: 1200px;
+    max-width: 95%;
+    margin: 2em auto;
+    padding: 25px;
+}
+.article-card {
+    overflow: hidden;
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.article-card-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+}
+
+.article-image {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.article-card-link .article-image {
+    height: 200px;
+    flex-shrink: 0;
+}
+
+#item-2 .article-image {
+    height: 100%;
+}
+
+.article-card-content {
+    padding: 15px;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+        justify-content: space-between;
+}
+
+.article-category {
+    color: var(--detail-3);
+    font-size: large;
+    margin-bottom: 0.5em;
+}
+
+.article-title {
+    font-size: 1.2em;
+    margin: 0 0 1em 0;
+    font-weight: bold;
+}
+
+.article-button-visual {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: var(--detail-2);
+    color: var(--secondary-color);
+    border-radius: 4px;
+    font-size: 0.9em;
+    text-decoration: none;
+    margin-top: auto;
+        align-self: center;
+    }
+.article-button-visual:hover {
+    background-color: var(--detail);
+    color: var(--secondary-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+#item-1 {
+    grid-column: 1 / -1;
+}
+#item-2 {
+    grid-column: 1 / 3;
+}
+#item-3 {
+    grid-column: 3 / 5;
+}
+
+.mystery-tea-container {
+    color: var(--main-color);
+    background-color: var(--secondary-color);
+    margin: 50px;
+    width: 880px;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto auto;
+    border-radius: 8px;
+}
+.green-circle-decor {
+    background: var(--main-color);
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    grid-column: 1 / 6;
+}
+.mystery-tea-questions {
+    grid-column: 2 / 4;
+}
