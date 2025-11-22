@@ -1,3 +1,32 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+
+# IDE and Editor Configuration
+.idea/
+.vscode/
+
+# Testing 
+test/
+.test/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment Variables
+.env
+.env.local
+
+# Temporary Files
+*.tmp
+*.bak
+*~
+
+# Build/Dist (if you add these later)
+dist/
+build/
