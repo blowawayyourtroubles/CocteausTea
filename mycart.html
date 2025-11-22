@@ -1,87 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cocteau's Tea | Cart Page</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Cocteau's Tea | Cart</title>
     <link rel="stylesheet" href="css/estilo.css" />
     <link rel="stylesheet" href="css/mycart.css" />
-  </head>
-  <body>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+<body>
+    <!-- Header (Copy standard header here) -->
     <header class="header-container">
-      <nav id="navbar">
-        <a href="index.html" class="header-link">
-          <h1 class="logo-header">Cocteau's Tea</h1>
-        </a>
-        <i class="fa-solid fa-bars" id="barras"></i>
-        <ul class="navbar-list">
-          <a href="index.html">
-            <li class="nav-item">Home</li>
-          </a>
-          <a href="menu.html">
-            <li class="nav-item">Menu</li>
-          </a>
-          <a href="about.html">
-            <li class="nav-item">About Us</li>
-          </a>
-          <a href="locations.html">
-            <li class="nav-item">Locations</li>
-          </a>
-        </ul>
-      </nav>
+        <nav id="navbar">
+            <a href="index.html" class="header-link"><h1 class="logo-header">Cocteau's Tea</h1></a>
+            <i class="fa-solid fa-bars" id="barras"></i>
+            <ul class="navbar-list">
+                <a href="index.html"><li class="nav-item">Home</li></a>
+                <a href="menu.html"><li class="nav-item">Menu</li></a>
+                <a href="about.html"><li class="nav-item">Story</li></a>
+                <a href="locations.html"><li class="nav-item">Locations</li></a>
+            </ul>
+        </nav>
     </header>
 
-    <main>
-      <h1>My cart</h1>
-      <hr />
-      <img src="assets/menu/white-tea.jpg" alt="" width="250px" />
-      <p>Price: $09</p>
-      <input type="number" />
-     
-      Total: $09
-      <hr />
+    <main class="cart-container">
+        <h1 class="section-title">Your Selection</h1>
+        
+        <div class="cart-grid">
+            <!-- Cart Header -->
+            <div class="cart-header">
+                <span>Product</span>
+                <span>Price</span>
+                <span>Quantity</span>
+                <span>Total</span>
+            </div>
+
+            <!-- Item 1 -->
+            <div class="cart-item">
+                <div class="item-info">
+                    <img src="assets/menu/white-tea.jpg" alt="White Tea">
+                    <div>
+                        <h3>Mint Mirage</h3>
+                        <small>100g Tin</small>
+                    </div>
+                </div>
+                <div class="item-price">$9.00</div>
+                <div class="item-qty">
+                    <input type="number" value="1" min="1">
+                </div>
+                <div class="item-total">$9.00</div>
+            </div>
+        </div>
+
+        <div class="cart-summary">
+            <div class="summary-row">
+                <span>Subtotal</span>
+                <span>$9.00</span>
+            </div>
+            <div class="summary-row">
+                <span>Shipping</span>
+                <span>$5.00</span>
+            </div>
+            <div class="summary-row total">
+                <span>Total</span>
+                <span>$14.00</span>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
     </main>
 
+    <!-- Footer (Copy standard footer here) -->
     <footer>
-      <div class="footer-container">
-        <div class="logo-footer">
-          <a href="index.html">
-            <span class="logo">Cocteau's Tea</span>
-          </a>
+        <!-- Copy contents from index.html footer -->
+        <div class="footer-container">
+             <p class="copy-right">&copy; 2025 Cocteau's Tea. All Rights Reserved</p>
         </div>
-
-        <div class="footer-links-container">
-          <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="locations.html">Locations</a></li>
-          </ul>
-        </div>
-
-        <div class="subscribe-container">
-          <h3>Subscribe Now and Begin Your Tea Journey</h3>
-          <p>
-            Explore artful tea-infused creations, culinary delights, and
-            timeless health benefits. Learn how your tea choices impact the
-            world. Join our community for exclusive updates, stories, and
-            inspiring challenges.
-          </p>
-        </div>
-
-        <div class="subscribe-form">
-          <input type="email" id="email" placeholder="Enter your email" />
-          <button class="subscribe-btn">Subscribe</button>
-        </div>
-
-        <div class="social-media">
-          <i class="fa-brands fa-x-twitter"></i>
-          <i class="fa-brands fa-instagram"></i>
-        </div>
-
-        <p class="copy-right">&copy; 2025 Cocteau's Tea. All Rights Reserved</p>
-      </div>
     </footer>
-  </body>
+
+    <script src="index.js"></script>
+</body>
 </html>

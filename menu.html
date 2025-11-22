@@ -1,132 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu | Cocteau's Tea</title>
+    
+    <!-- GLOBAL STYLES (Load this first) -->
     <link rel="stylesheet" href="css/estilo.css" />
+    <!-- PAGE SPECIFIC STYLES -->
     <link rel="stylesheet" href="css/menu.css" />
+    
     <link rel="shortcut icon" href="assets/cup-ico.png" type="image/x-icon">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
 
-  <style></style>
-  <body>
-     
+<body>
+    <!-- HEADER (Global) -->
     <header class="header-container">
-      <nav id="navbar">
-        <a href="index.html" class="header-link">
-          <h1 class="logo-header">Cocteau's Tea</h1>
-        </a>
-        <i class="fa-solid fa-bars" id="barras"></i>
-        <ul class="navbar-list">
-          <a href="index.html">
-            <li class="nav-item">Home</li>
-          </a>
-          <a href="menu.html">
-            <li class="nav-item">Menu</li>
-          </a>
-          <a href="about.html">
-            <li class="nav-item">About Us</li>
-          </a>
-          <a href="locations.html">
-            <li class="nav-item">Locations</li>
-          </a>
-        </ul>
-        
-      </nav>
+        <nav id="navbar">
+            <a href="index.html" class="header-link">
+                <h1 class="logo-header">Cocteau's Tea</h1>
+            </a>
+            <i class="fa-solid fa-bars" id="barras"></i>
+            <ul class="navbar-list">
+                <a href="index.html"><li class="nav-item">Home</li></a>
+                <a href="menu.html"><li class="nav-item">Menu</li></a>
+                <a href="about.html"><li class="nav-item">About Us</li></a>
+                <a href="locations.html"><li class="nav-item">Locations</li></a>
+            </ul>
+        </nav>
     </header>
-    
-    <main class="menu">
-      <section>
-        <h1 class="menu-title">Cocteau Menu</h1>
-        <div class="menu-section">
-          <div class="menu-item">
-            <img src="assets/menu/white-tea.jpg" alt="" class="menu-item-image" />
-            <h3 class="menu-item-title">Mint Mirage</h3>
-            <p class="menu-item-description">$09 / 100G</p>
-            <a href="mycart.html"><button class="menu-item-button" onclick="">Buy Now</button></a>
-          </div>
-          <div class="menu-item">
-            <img src="assets/menu/green-tea.jpg" alt="" class="menu-item-image" />
-            <h3 class="menu-item-title">Jasmine Reveire</h3>
-            <p class="menu-item-description">$10 / 100G</p>
-            <button class="menu-item-button" onclick="">Buy Now</button>
-          </div>
-          <div class="menu-item">
-            <img src="assets/menu/yellow-tea.jpg" alt="" class="menu-item-image" />
-            <h3 class="menu-item-title">Golden Darjeeling</h3>
-            <p class="menu-item-description">$12 / 100g</p>
-            <button class="menu-item-button" onclick="">Buy Now</button>
-          </div>
-          <div class="menu-item">
-            <img src="assets/menu/tea-white.png" alt="" class="menu-item-image" />
-            <h3 class="menu-item-title">Winter Rose</h3>
-            <p class="menu-item-description">$11 / 100g</p>
-            <button class="menu-item-button" onclick="">Buy Now</button>
-          </div>
-          <div class="menu-item">
-            <img src="assets/menu/herbal_bliss.jpeg" alt="" class="menu-item-image" />
-            <h3 class="menu-item-title">Smoked Lapsang</h3>
-            <p class="menu-item-description">$18 / 100g</p>
-            <button class="menu-item-button" onclick="">Buy Now</button>
-          </div>
-          <div class="menu-item">
-            <img src="assets/menu/Smoked_Lapsangh.jpeg" alt="" class="menu-item-image" />
-            <h3 class="menu-item-title">Herbal Bliss</h3>
-            <p class="menu-item-description">$14 / 100g</p>
-            <button class="menu-item-button" onclick="">Buy Now</button>
-          </div>
-    
+
+    <main class="menu-main">
+        
+        <!-- STANDARD MENU GRID -->
+        <section class="menu-items-section">
+            <div class="section-header">
+                <h1 class="menu-title section-title">Cocteau Menu</h1>
+                <p class="section-subtitle">Our signature blends, crafted for the dreamer.</p>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Item 1 -->
+                <div class="menu-card">
+                    <div class="card-image">
+                        <img src="assets/menu/white-tea.jpg" alt="Mint Mirage" />
+                    </div>
+                    <div class="card-content">
+                        <h3 class="menu-item-title">Mint Mirage</h3>
+                        <p class="menu-item-desc">Refreshing peppermint with a hint of vanilla.</p>
+                        <div class="card-footer">
+                            <span class="price">$9.00 / 100g</span>
+                            <a href="mycart.html"><button class="buy-btn">Add to Cart</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="menu-card">
+                    <div class="card-image">
+                        <img src="assets/menu/green-tea.jpg" alt="Jasmine Reveire" />
+                    </div>
+                    <div class="card-content">
+                        <h3 class="menu-item-title">Jasmine Reveire</h3>
+                        <p class="menu-item-desc">Green tea pearls scented with night-blooming jasmine.</p>
+                        <div class="card-footer">
+                            <span class="price">$10.00 / 100g</span>
+                            <a href="mycart.html"><button class="buy-btn">Add to Cart</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="menu-card">
+                    <div class="card-image">
+                        <img src="assets/menu/yellow-tea.jpg" alt="Golden Darjeeling" />
+                    </div>
+                    <div class="card-content">
+                        <h3 class="menu-item-title">Golden Darjeeling</h3>
+                        <p class="menu-item-desc">The champagne of teas, harvested in the second flush.</p>
+                        <div class="card-footer">
+                            <span class="price">$12.00 / 100g</span>
+                            <a href="mycart.html"><button class="buy-btn">Add to Cart</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="menu-card">
+                    <div class="card-image">
+                        <img src="assets/menu/white-tea.jpg" alt="Winter Rose" />
+                    </div>
+                    <div class="card-content">
+                        <h3 class="menu-item-title">Winter Rose</h3>
+                        <p class="menu-item-desc">White tea blended with dried rose petals and spices.</p>
+                        <div class="card-footer">
+                            <span class="price">$11.00 / 100g</span>
+                            <a href="mycart.html"><button class="buy-btn">Add to Cart</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="menu-card">
+                    <div class="card-image">
+                        <img src="assets/menu/herbal_bliss.jpeg" alt="Smoked Lapsang" />
+                    </div>
+                    <div class="card-content">
+                        <h3 class="menu-item-title">Smoked Lapsang</h3>
+                        <p class="menu-item-desc">Pine-smoked black tea for a bold, campfire aroma.</p>
+                        <div class="card-footer">
+                            <span class="price">$18.00 / 100g</span>
+                            <a href="mycart.html"><button class="buy-btn">Add to Cart</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="menu-card">
+                    <div class="card-image">
+                        <img src="assets/menu/Smoked_Lapsangh.jpeg" alt="Herbal Bliss" />
+                    </div>
+                    <div class="card-content">
+                        <h3 class="menu-item-title">Herbal Bliss</h3>
+                        <p class="menu-item-desc">A soothing mix of chamomile, lavender, and valerian.</p>
+                        <div class="card-footer">
+                            <span class="price">$14.00 / 100g</span>
+                            <a href="mycart.html"><button class="buy-btn">Add to Cart</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-tea">
+        <div class="menu-header">
+          <h1>COCTEAU'S TEA</h1>
+          <h2>Special Selection</h2>
         </div>
-        <div>
-          <!-- <img  id="carrusell"   src="/assets/simple-tea.jpeg" alt=""> -->
+
+        <div class="tea-special-menu">
+          <div class="tea-item">
+            <img src="assets/tea.jpeg" alt="Earl Grey" class="tea-img-item" />
+            <div class="tea-details">
+              <h3>EARL GREY</h3>
+              <p>Bergamot-kissed black tea</p>
+              <span class="price">$4.50</span>
+            </div>
+          </div>
+
+          <div class="tea-item">
+            <img src="assets/tea-green.png" alt="Matcha" class="tea-img-item" />
+            <div class="tea-details">
+              <h3>MATCHA</h3>
+              <p>Uji ceremonial grade</p>
+              <span class="price">$5.00</span>
+            </div>
+          </div>
+
+          <div class="tea-item">
+            <img src="assets/tea-tasting.jpg" alt="Oolong" class="tea-img-item" />
+            <div class="tea-details">
+              <h3>DA HONG PAO</h3>
+              <p>Cliffside roasted oolong</p>
+              <span class="price">$6.50</span>
+            </div>
+          </div>
         </div>
       </section>
 
-      <div class="menu-tea">
-  <div class="menu-header">
-    <h1>COCTEAU'S TEA</h1>
-    <h2>Special Selection</h2>
-  </div>
-
-  <div class="tea-special-menu">
-    <div class="tea-item">
-      <img src="/assets/tea.jpeg" alt="Earl Grey">
-      <div class="tea-details">
-        <h3>EARL GREY</h3>
-        <p>Bergamot-kissed black tea</p>
-        <span class="price">4.50</span>
-      </div>
-    </div>
-
-    <div class="tea-item">
-      <img src="/assets/tea-green.png" alt="Matcha">
-      <div class="tea-details">
-        <h3>MATCHA</h3>
-        <p>Uji ceremonial grade</p>
-        <span class="price">5.00</span>
-      </div>
-    </div>
-
-    <div class="tea-item">
-      <img src="/assets/tea-tasting.jpg" alt="Oolong">
-      <div class="tea-details">
-        <h3>DA HONG PAO</h3>
-        <p>Cliffside roasted oolong</p>
-        <span class="price">6.50</span>
-      </div>
-    </div>
-  </div>
-</div>
-    
-      <section class="brew-guide">
+        <!-- BREWING GUIDE -->
+       <section class="brew-guide">
         <h1>Tea Brewing Guide</h1>
         <table class="brew-table">
           <thead>
@@ -151,10 +195,10 @@
               <td>2 - 3 minutes</td>
             </tr>
             <tr>
-              <td><strong>Green-Black Blend</strong></td>
-              <td>180 - 212</td>
-              <td>82 - 100</td>
-              <td>3 - 4 minutes</td>
+              <td><strong>Oolong</strong></td>
+              <td>180 - 195</td>
+              <td>82 - 90</td>
+              <td>2 - 3 minutes</td>
             </tr>
             <tr>
               <td><strong>White</strong></td>
@@ -163,129 +207,104 @@
               <td>3 - 4 minutes</td>
             </tr>
             <tr>
-              <td><strong>Herbal, Rooibos</strong></td>
+              <td><strong>Herbal</strong></td>
               <td>190 - 212</td>
               <td>88 - 100</td>
               <td>4 - 5 minutes</td>
             </tr>
-            <tr>
-              <td><strong>Puerh</strong></td>
-              <td>195 - 200</td>
-              <td>90 - 95</td>
-              <td>4 - 5 minutes*</td>
-            </tr>
-            <tr>
-              <td><strong>Yellow</strong></td>
-              <td>175 - 180</td>
-              <td>79 - 82</td>
-              <td>2 - 3 minutes</td>
-            </tr>
-            <tr>
-              <td><strong>Oolong</strong></td>
-              <td>180 - 195</td>
-              <td>82 - 90</td>
-              <td>2 - 3 minutes*</td>
-            </tr>
           </tbody>
         </table>
-        <p class="note">* Often uses specialized teaware for a series of small, short brews</p>
-      </section>
-    </main>
-    <section>
-     <div class="tea-hero">
-        <div class="tea-hero-content">
-          <h1 class="tea-origins-title">Tea Origins Around the World</h1>
-          <p class="tea-subtitle">
-            Discover the rich cultural heritage and unique flavors of teas from
-            different regions across the globe
-          </p>
-    
-          <div class="tea-grid">
-            <div class="tea-card" tabindex="0">
-              <h2>China</h2>
-              <p>
-                The birthplace of tea, China offers diverse varieties like
-                delicate green teas, complex oolongs, and aged pu-erh. Regions
-                like Fujian an d Yunnan produce teas with centuries of tradition.
-              </p>
-              <a href="#" class="tea-learn-more">Explore Chinese teas →</a>
-            </div>
-    
-            <div class="tea-card" tabindex="0">
-              <h2>India</h2>
-              <p>
-                World-renowned for robust Assam and floral Darjeeling teas.
-                India's varied climates produce distinctive flavors, from malty
-                breakfast teas to delicate high-grown varieties.
-              </p>
-              <a href="#" class="tea-learn-more">Explore Indian teas →</a>
-            </div>
-    
-            <div class="tea-card" tabindex="0">
-              <h2>Japan</h2>
-              <p>
-                Master of green tea, Japan specializes in shaded teas like matcha
-                and gyokuro, with precise steaming techniques that create vibrant,
-                umami-rich flavors.
-              </p>
-              <a href="#" class="tea-learn-more">Explore Japanese teas →</a>
+            <p class="note">* Adjust times based on personal preference.</p>
+        </section>
+
+   <section>
+        <div class="tea-hero">
+          <div class="tea-hero-content">
+            <h1 class="tea-origins-title">Tea Origins Around the World</h1>
+            <p class="tea-subtitle">
+              Discover the rich cultural heritage and unique flavors of teas from different regions across the globe
+            </p>
+
+            <div class="tea-grid">
+              <div class="tea-card">
+                <h2>China</h2>
+                <p>
+                  The birthplace of tea, China offers diverse varieties like delicate green teas, complex oolongs, and aged
+                  pu-erh. Regions like Fujian and Yunnan produce teas with centuries of tradition.
+                </p>
+                <a href="#" class="tea-learn-more">Explore Chinese teas →</a>
+              </div>
+
+              <div class="tea-card">
+                <h2>India</h2>
+                <p>
+                  World-renowned for robust Assam and floral Darjeeling teas. India's varied climates produce distinctive
+                  flavors, from malty breakfast teas to delicate high-grown varieties.
+                </p>
+                <a href="#" class="tea-learn-more">Explore Indian teas →</a>
+              </div>
+
+              <div class="tea-card">
+                <h2>Japan</h2>
+                <p>
+                  Master of green tea, Japan specializes in shaded teas like matcha and gyokuro, with precise steaming
+                  techniques that create vibrant, umami-rich flavors.
+                </p>
+                <a href="#" class="tea-learn-more">Explore Japanese teas →</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section>
-      <div class="tea-gallery-container">
-  <div class="tea-gallery tea-gallery-img-1"><img src="assets/species-tea.png" alt=""></div>
-  <div class="tea-gallery tea-gallery-img-3"><img src="assets/calm-tea.jpg" alt=""></div>
-  <div class="tea-gallery tea-gallery-img-2"><img src="assets/tea-cup-img.png" alt=""></div>
-  <div class="tea-gallery-text">
-    <div class="tea-text">Transmission</div>
-    <div class="tea-text">Suspension</div>
-    <div class="tea-text">Solution</div>
-  </div>
-</div>
-    </section>
+      </section>
+
+        <!-- TEA GALLERY (From your previous mag.html) -->
+        <section class="gallery-section">
+            <div class="tea-gallery-container">
+                <div class="tea-gallery tea-gallery-img-1"><img src="assets/species-tea.png" alt=""></div>
+                <div class="tea-gallery tea-gallery-img-3"><img src="assets/calm-tea.jpg" alt=""></div>
+                <div class="tea-gallery tea-gallery-img-2"><img src="assets/tea-cup-img.png" alt=""></div>
+                <div class="tea-gallery-text">
+                    <div class="tea-text">Transmission</div>
+                    <div class="tea-text">Suspension</div>
+                    <div class="tea-text">Solution</div>
+                </div>
+            </div>
+        </section>
+
+     
+
+    </main>
+
+    <!-- FOOTER (Global) -->
     <footer>
-      <div class="footer-container">
-        <div class="logo-footer">
-          <a href="index.html">
-            <span class="logo">Cocteau's Tea</span>
-          </a>
+        <div class="footer-container">
+            <div class="logo-footer">
+                <a href="index.html"><span class="logo">Cocteau's Tea</span></a>
+            </div>
+            <div class="footer-links-container">
+                <ul class="footer-links">
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="menu.html"><li>Menu</li></a>
+                    <a href="about.html"><li>About Us</li></a>
+                    <a href="locations.html"><li>Locations</li></a>
+                </ul>
+            </div>
+            <div class="subscribe-container">
+                <h3>Subscribe Now</h3>
+                <p>Join our community for exclusive updates and stories.</p>
+            </div>
+            <div class="subscribe-form">
+                <input type="email" placeholder="Enter your email" />
+                <button class="subscribe-btn">Subscribe</button>
+            </div>
+            <div class="social-media">
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <p class="copy-right">&copy; 2025 Cocteau's Tea. All Rights Reserved</p>
         </div>
-
-        <div class="footer-links-container">
-          <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="locations.html">Locations</a></li>
-          </ul>
-        </div>
-
-        <div class="subscribe-container">
-          <h3>Subscribe Now and Begin Your Tea Journey</h3>
-          <p>
-            Explore artful tea-infused creations, culinary delights, and
-            timeless health benefits. Learn how your tea choices impact the
-            world. Join our community for exclusive updates, stories, and
-            inspiring challenges.
-          </p>
-        </div>
-
-        <div class="subscribe-form">
-          <input type="email" id="email" placeholder="Enter your email" />
-          <button class="subscribe-btn">Subscribe</button>
-        </div>
-
-        <div class="social-media">
-          <i class="fa-brands fa-x-twitter"></i>
-          <i class="fa-brands fa-instagram"></i>
-        </div>
-
-        <p class="copy-right">&copy; 2025 Cocteau's Tea. All Rights Reserved</p>
-      </div>
     </footer>
+    
     <script src="index.js"></script>
-  </body>
+</body>
 </html>
