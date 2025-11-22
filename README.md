@@ -12,6 +12,9 @@ vision of Jean Cocteau and the timeless elegance of Yves Saint Laurent.
 
 **Colors Used:** Deep forest greens (#12221E), warm creams (#F6EFE6), and refined gold accents (#C7A77A)
 
+# Preview
+![Preview](preview-cocteau.jpg)
+
 # Content 
 * Home
 * Menu
